@@ -1,0 +1,2 @@
+## Sub-Agent-Dispatch
+Vor jedem Dispatch von Sub-Agents pro Teilaufgabe Modell und Effort nennen und in einem Satz begruenden - als Deklaration, nicht als Frage. Standard: Sonnet fuer mechanische, gut spezifizierte, verifizierbare Arbeit; Opus fuer Logik, Diagnosen, Rechenkerne, Architektur. Nur nachfragen, wenn der Lauf voraussichtlich gross wird.
