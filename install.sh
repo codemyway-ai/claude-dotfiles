@@ -14,4 +14,12 @@ if ! command -v claude >/dev/null 2>&1 && [ ! -x "$HOME/.local/bin/claude" ]; th
   curl -fsSL https://claude.ai/install.sh | bash </dev/null || echo "CLI-Installation fehlgeschlagen - manuell nachholen."
 fi
 
+if command -v claude >/dev/null 2>&1; then
+  claude plugin marketplace add obra/superpowers-marketplace </dev/null || true
+  claude plugin marketplace add anthropics/claude-plugins-official </dev/null || true
+  claude plugin install superpowers@superpowers-marketplace </dev/null || true
+  claude plugin install security-guidance@claude-plugins-official </dev/null || true
+  claude plugin list </dev/null || true
+fi
+
 echo "Dotfiles fertig."
